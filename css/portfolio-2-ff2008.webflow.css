@@ -1038,7 +1038,7 @@ a {
 
 .client-tag {
   color: var(--navy);
-  padding-top: 2px;
+  padding-top: 0;
   padding-bottom: 6px;
   font-family: Tarnac Sans, Arial, sans-serif;
 }
@@ -1047,16 +1047,22 @@ a {
   color: var(--navy);
   text-transform: uppercase;
   width: 90%;
-  margin-top: 20px;
-  margin-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 7px;
   font-family: Fontspring Demo Freigeist, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 900;
-  line-height: 30px;
+  line-height: 27px;
 }
 
 .project-tag:hover {
   text-decoration: underline;
+}
+
+.project-tag.t1 {
+  margin-top: 19px;
+  font-size: 30px;
+  line-height: 26px;
 }
 
 .role-tag {
@@ -1081,9 +1087,14 @@ a {
   display: block;
 }
 
+.work-link-block.test {
+  margin-bottom: 0;
+}
+
 .work-tag-div {
   flex-flow: column;
-  justify-content: space-between;
+  flex: 0 auto;
+  justify-content: flex-start;
   align-items: flex-start;
   display: flex;
 }
@@ -1212,6 +1223,79 @@ a {
   font-weight: 300;
 }
 
+.work-div {
+  flex-flow: column;
+  display: flex;
+}
+
+.work-pic {
+  width: 160px;
+}
+
+.work-pic.doj {
+  background-image: url('../images/IMG_0710.jpg');
+  background-position: 50%;
+  background-size: cover;
+  flex: 0 auto;
+  align-self: auto;
+  width: 30%;
+  height: 138px;
+  margin-right: 19px;
+}
+
+.work-pic.doj.gmb {
+  background-image: url('../images/668e94074ce4db792171fa13_GSCW12KXcAEW7I7.jpeg'), url('../images/IMG_0710.jpg');
+  background-position: 50%, 50%;
+  background-size: cover, cover;
+}
+
+.work-pic.doj.neu {
+  background-image: url('../images/0049-Free-School-Meals-for-All-London-United-Kingdom-June23-METTYUNUABONA.jpg'), url('../images/IMG_0710.jpg');
+  background-position: 0 0, 50%;
+  background-size: cover, cover;
+}
+
+.work-pic.doj.itf {
+  background-image: url('../images/422186930_765787142248541_3583121316794205611_n.jpg'), url('../images/IMG_0710.jpg');
+  background-position: 0 0, 50%;
+  background-size: cover, cover;
+}
+
+.work-pic.doj.btm {
+  background-image: url('../images/69503949_2194352547532311_333786923829063940_n.jpg'), url('../images/IMG_0710.jpg');
+  background-position: 0 0, 50%;
+  background-size: cover, cover;
+}
+
+.work-content {
+  flex-flow: column;
+  flex: 1;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: flex-start;
+  padding-top: 18px;
+  display: flex;
+}
+
+.tag-div {
+  margin-top: 15px;
+  margin-bottom: 23px;
+}
+
+.project-div {
+  background-color: var(--off-white);
+  flex: 1;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.project-div:hover {
+  background-color: var(--white);
+}
+
 @media screen and (max-width: 991px) {
   .nav-bar {
     height: 110px;
@@ -1235,7 +1319,7 @@ a {
 
   .left-section.yellow {
     padding-left: 56px;
-    padding-right: 50px;
+    padding-right: 32px;
   }
 
   .home-copy {
@@ -1450,6 +1534,12 @@ a {
     height: 240px;
   }
 
+  .project-tag.t1 {
+    margin-top: 23px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
   .work-link-block {
     width: 100%;
   }
@@ -1471,6 +1561,10 @@ a {
   .about-link-copy {
     margin-bottom: 10px;
     padding-bottom: 0;
+  }
+
+  .work-pic.doj {
+    margin-right: 17px;
   }
 }
 
@@ -1814,6 +1908,10 @@ a {
     line-height: 26px;
   }
 
+  .project-tag.t1 {
+    margin-top: 16px;
+  }
+
   .bold-text-2 {
     font-size: 20px;
   }
@@ -1846,8 +1944,25 @@ a {
     color: var(--navy);
   }
 
+  .experience-tag.orange, .experience-tag.pale, .experience-tag.sa {
+    font-size: 12px;
+  }
+
   .experience-subtitle {
     font-size: 18px;
+  }
+
+  .work-pic.doj {
+    width: 100%;
+  }
+
+  .work-content {
+    padding-bottom: 9px;
+    padding-left: 21px;
+  }
+
+  .project-div {
+    flex-flow: column;
   }
 }
 
