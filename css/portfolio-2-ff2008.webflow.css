@@ -1957,8 +1957,12 @@ a {
     width: 100%;
   }
 
-  .work-pic.doj.neu, .work-pic.doj.btm {
+  .work-pic.doj.neu {
     background-position: 50%, 50%;
+  }
+
+  .work-pic.doj.btm {
+    background-position: 50% 10%, 50%;
   }
 
   .work-content {
