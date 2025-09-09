@@ -350,7 +350,7 @@ a {
   margin-bottom: 35px;
   font-family: Tarnac Sans, Arial, sans-serif;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 28px;
 }
 
@@ -1615,6 +1615,7 @@ a {
     width: 94%;
     margin-bottom: 26px;
     font-size: 22px;
+    font-weight: 300;
     line-height: 26px;
   }
 
