@@ -391,6 +391,10 @@ a {
   display: block;
 }
 
+.about-link:hover {
+  color: var(--navy);
+}
+
 .about-link.white {
   color: var(--white);
 }
